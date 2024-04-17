@@ -1,40 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>TechnoShop</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us - TechnoShop</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon_io/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="Images/favicon_io/android-chrome-192x192.png">
 </head>
 <body>
-      <div id="container>
+    <div id="container">
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav">
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776; Menu</div>
+            </a>
+            <div id="menu-links" class="menu-hidden">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="cart.html">Your Cart</a>
+            </div>
+        </nav>
 
-          <!-- Use the header area for the website name or logo -->
-	        <header id=ffc-logo>
-	        </header>
-        
-          <!-- Use the nav area to add hyperlinks to other pages within the website -->
-          <nav class="Tablet-desktop">
-              <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="shop.html">Shop</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="cart.html">Cart</a></li>
-              </ul>
-          </nav>
+        <!-- Header with Logo -->
+        <header id="ffc-logo">
+            <a href="index.html"><img src="Images/Logo technoshop.png" alt="Logo TechnoShop" height="30"></a>
+        </header>
 
-          <main>
-                <h1>Contact Us</h1>
-                    <p>......</p>
+        <!-- Tablet and Desktop Navigation -->
+        <nav class="tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html">Your Cart</a></li>
+            </ul>
+        </nav>
 
-                <section id="contact-form">
-          </main>
+        <!-- Main Content Area -->
+        <main>
+            <h1>Contact Us</h1>
+            <p>We're here to help! Contact us with any questions, concerns, or feedback you might have.</p>
+            
+            <section id="contact-form">
+                <form action="submit_contact.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+    
+            <section id="contact-info">
+                <h2>Other Ways to Reach Us</h2>
+                <p><strong>Email:</strong> support@technoshop.com</p>
+                <p><strong>Phone:</strong> +1 123 456 7890</p>
+                <p><strong>Address:</strong> 123 Tech Street, Silicon Valley, CA</p>
+            </section>
+        </main>
 
-          <footer>
-              <p>&copy;.........</p>
-          </footer>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 TechnoShop. All rights reserved.</p>
+        </footer>
     </div>
+
+    <script>
+        function hamburger() {
+            var menu = document.getElementById('menu-links');
+            if (menu.classList.contains('menu-hidden')) {
+                menu.classList.remove('menu-hidden');
+            } else {
+                menu.classList.add('menu-hidden');
+            }
+        }
+    </script>
 </body>
 </html>
 
