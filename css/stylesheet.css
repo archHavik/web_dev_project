@@ -1,0 +1,88 @@
+/* css Reset */
+body, header, nav, footer, h3, div, img, ul, section, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Styles for the video section */
+#video {
+    background-color: #ffffff;
+    padding: 50px 0;
+    
+  }
+  
+  #video video {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  
+  /* Style tules for header */
+  header {
+    text-align: left 20px;
+    padding: 20px;
+  }
+
+  /* Styles for the main section */
+main {
+    text-align: center; 
+    padding: 20px;
+    box-sizing: border-box;
+    color: #375c83;
+}
+
+main section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+main p {
+    line-height: 5;
+}
+
+/* Styles for the navigation */
+nav.tablet-desktop {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: -30px;
+}
+
+nav.tablet-desktop ul {
+    list-style-type: none;
+}
+
+nav.tablet-desktop ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav.tablet-desktop ul li:last-child {
+    margin-right: 20;
+}
+
+/* Media queries for mobile */
+@media screen and (max-width:768px) {
+    
+}
+
+/* Hide tablet destop navigation */
+nav.tablet-desktop {
+    display: none;
+}
+
+#menu-links{
+    display: none;
+}
+
+
+footer {
+    text-align: center;
+}
+/* Styles for the navigation */
+nav.tablet-desktop {
+    display: flex;
+    justify-content: flex-end;
+}
