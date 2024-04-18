@@ -15,20 +15,23 @@ body, header, nav, footer, h3, div, img, ul, section, video {
 /* Style for rules for hamburger menu */
 
 .mobile-nav a {
-	color: #fff;
+	color: #375c83;
 	font-family: 'Francois One', sans-serif;
 	text-align: center;
 	font-size: 2em;
 	text-decoration: none;
 	padding: 3%;
 	display: block;
+    background-color: #b4b4a6;
 }
+
 
 .mobile-nav a.menu-icon {
 	display: block;
 	position: absolute;
 	right: 0;
 	top: 0;
+    color: #375c83;
 }
 
 /* Styles for the video section */
@@ -44,7 +47,7 @@ body, header, nav, footer, h3, div, img, ul, section, video {
 	border-radius: 20px;
 }
 
-/* Style tules for header */
+/* Style rules for header */
 header {
 	background-color: #b4b4a6;
 	text-align: left 20px;
@@ -68,10 +71,9 @@ main p {
     line-height: 5;
 }
 
-/* Styles for the navigation */
+/* Styles for the nav */
 nav.tablet-desktop {
 	background-color: #b4b4a6;
-    display: flex;
     justify-content: center;
     margin-bottom: 100px;
     margin-top: -30px;
@@ -90,15 +92,20 @@ nav.tablet-desktop ul li:last-child {
     margin-right: 20;
 }
 
-/* Hide tablet destop navigation */
-nav.tablet-desktop {
+nav li a:hover {
+    color: #000;
+    background-color: #ccccbf;
+    transform: scale(1.3);
+}
+
+.tablet-desktop, #menu-links {
     display: none;
 }
 
-#menu-links{
-    display: none;
+a{
+    text-decoration: none;
+    color: #375c83;
 }
-
 
 footer {
     text-align: center;
