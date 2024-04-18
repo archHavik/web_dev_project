@@ -1,3 +1,10 @@
+/* Colors
+#f4f2ec - main background color
+#ece4d4
+#b4b4a6 - accent color
+#ececdc
+#ece4cc
+
 /* css Reset */
 body, header, nav, footer, h3, div, img, ul, section, video {
     margin: 0;
@@ -8,22 +15,24 @@ body, header, nav, footer, h3, div, img, ul, section, video {
 /* Styles for the video section */
 #video {
     background-color: #ffffff;
-    padding: 50px 0;
-    
-  }
+    padding: 50px 0;  
+}
   
-  #video video {
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-    border-radius: 20px;
-  }
+#container 
   
-  /* Style tules for header */
-  header {
-    text-align: left 20px;
-    padding: 20px;
-  }
+#video video {
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+	border-radius: 20px;
+}
+
+/* Style tules for header */
+header {
+	background-color: #b4b4a6;
+	text-align: left 20px;
+	padding: 20px;
+}
 
   /* Styles for the main section */
 main {
@@ -44,6 +53,7 @@ main p {
 
 /* Styles for the navigation */
 nav.tablet-desktop {
+	background-color: #b4b4a6;
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
