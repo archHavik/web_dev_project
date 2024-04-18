@@ -13,11 +13,13 @@ body, header, nav, footer, h3, div, img, ul, section, video {
     border: 0;
 }
 
-/* Style for rules for hamburger menu */
+#container {
+	font-family: 'Francois One', sans-serif;
+}
 
+/* Style for rules for hamburger menu */
 .mobile-nav a {
 	color: #375c83;
-	font-family: 'Francois One', sans-serif;
 	text-align: center;
 	font-size: 2em;
 	text-decoration: none;
