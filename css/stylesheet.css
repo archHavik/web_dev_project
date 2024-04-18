@@ -111,11 +111,6 @@ a{
 footer {
     text-align: center;
 }
-/* Styles for the navigation */
-nav.tablet-desktop {
-    display: flex;
-    justify-content: flex-end;
-}
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 630px), print {
