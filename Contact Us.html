@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us - TechnoShop</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon_io/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="Images/favicon_io/android-chrome-192x192.png">
+</head>
+<body>
+    <div id="container">
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav">
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776; Menu</div>
+            </a>
+            <div id="menu-links" class="menu-hidden">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="cart.html">Cart</a>
+            </div>
+        </nav>
+
+        <!-- Header with Logo -->
+        <header id="ffc-logo">
+            <a href="index.html"><img src="Images/Logo technoshop.png" alt="Logo TechnoShop" height="30"></a>
+        </header>
+
+        <!-- Tablet and Desktop Navigation -->
+        <nav class="tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main>
+            <h1>Contact Us</h1>
+            <p>We're here to help! Contact us with any questions, concerns, or feedback you might have.</p>
+            
+            <section id="contact-form">
+                <form action="submit_contact.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+    
+            <section id="contact-info">
+                <h2>Other Ways to Reach Us</h2>
+                <p><strong>Email:</strong> support@technoshop.com</p>
+                <p><strong>Phone:</strong> +1 123 456 7890</p>
+                <p><strong>Address:</strong> 123 Tech Street, Silicon Valley, CA</p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; Copyright 2021. All Right Reserved.</p>
+            <p><a href="mailto:technoshop@mail.net">technoshop@mail.net</a></p>
+        </footer>
+    </div>
+    
+    <script src="Script/script.js"></script>
+    
+    <script>
+        function hamburger() {
+            var menu = document.getElementById('menu-links');
+            if (menu.classList.contains('menu-hidden')) {
+                menu.classList.remove('menu-hidden');
+            } else {
+                menu.classList.add('menu-hidden');
+            }
+        }
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>TechnoShop</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon_io/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="Images/favicon_io/android-chrome-192x192.png">
+</head>
+<body>
+    <div id="container">
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav">
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776; Menu</div>
+            </a>
+            <div id="menu-links" class="menu-hidden">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="cart.html">Your Cart</a>
+            </div>
+        </nav>
+
+        <!-- Header for Website Name or Logo -->
+        <header id="ffc-logo">
+            <a href="index.html"><img src="Images/Logo technoshop.png" alt="Logo TechnoShop" height="30"></a>
+        </header>
+
+        <!-- Tablet and Desktop Navigation -->
+        <nav class="tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html">Your Cart</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main>
+            <h1>Welcome to TechnoShop!</h1>
+            <p>Your one-stop shop for all the latest technology gadgets and gear. Explore our extensive range of high-quality tablets designed to fit every need and budget.</p>
+
+            <section id="features">
+                <h2>Featured Tablets</h2>
+                <div class="products">
+                    <div class="product">
+                        <img src="Images/produit1.jpg" alt="Tablet 1">
+                        <h3>Pro Tablet Model 1</h3>
+                        <p>Powerful performance in your hands.</p>
+                        <a href="shop.html#tablet1">Learn More</a>
+                    </div>
+                    <div class="product">
+                        <img src="Images/produit2.jpg" alt="Tablet 2">
+                        <h3>Pro Tablet Model 2</h3>
+                        <p>Next-generation technology for professionals.</p>
+                        <a href="shop.html#tablet2">Learn More</a>
+                    </div>
+                    <div class="product">
+                        <img src="Images/produit3.jpg" alt="Tablet 3">
+                        <h3>Pro Tablet Model 3</h3>
+                        <p>Stunning visuals and superb performance.</p>
+                        <a href="shop.html#tablet3">Learn More</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; Copyright 2021. All Rights Reserved.</p>
+            <p><a href="mailto:technoshop@mail.net">technoshop@mail.net</a></p>
+        </footer>
+    </div>
+
+    <script src="Script/script.js"></script>
+    <script>
+        function hamburger() {
+            var menu = document.getElementById('menu-links');
+            if (menu.classList.contains('menu-hidden')) {
+                menu.classList.remove('menu-hidden');
+            } else {
+                menu.classList.add('menu-hidden');
+            }
+        }
+    </script>
+</body>
+</html>
