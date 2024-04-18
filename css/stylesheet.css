@@ -12,13 +12,30 @@ body, header, nav, footer, h3, div, img, ul, section, video {
     border: 0;
 }
 
+/* Style for rules for hamburger menu */
+
+.mobile-nav a {
+	color: #fff;
+	font-family: 'Francois One', sans-serif;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 3%;
+	display: block;
+}
+
+.mobile-nav a.menu-icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
 /* Styles for the video section */
 #video {
     background-color: #ffffff;
     padding: 50px 0;  
 }
-  
-#container 
   
 #video video {
 	width: 70%;
