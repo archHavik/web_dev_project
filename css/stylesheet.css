@@ -73,23 +73,30 @@ main p {
 }
 
 /* Styles for the nav */
-nav.tablet-desktop {
+#nav {
+	display: flex;
+	justify-content: space-between;
 	background-color: #b4b4a6;
-    justify-content: center;
+}
+
+nav .tablet-desktop {
+    justify-content: flex-end;
     margin-bottom: 100px;
     margin-top: -30px;
 }
 
-nav.tablet-desktop ul {
+.tablet-desktop ul {
+	margin-bottom: auto;
+	margin-top: auto;
     list-style-type: none;
 }
 
-nav.tablet-desktop ul li {
+.tablet-desktop ul li {
     display: inline-block;
     margin-right: 30px;
 }
 
-nav.tablet-desktop ul li:last-child {
+.tablet-desktop ul li:last-child {
     margin-right: 20;
 }
 
@@ -114,9 +121,10 @@ footer {
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 630px), print {
-		/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+	
+	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
 	.tablet-desktop {
-		display: block;
+		display: flex;
 	}
 
 	.mobile, .mobile-nav {
