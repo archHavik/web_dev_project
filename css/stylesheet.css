@@ -56,8 +56,8 @@ body, header, nav, footer, h3, div, img, ul, section, video {
 /* Style rules for header */
 header {
 	background-color: #b4b4a6;
-	text-align: left 20px;
 	padding: 20px;
+	position: sticky;
 }
 
   /* Styles for the main section */
@@ -114,6 +114,10 @@ nav .tablet-desktop {
     background-color: #ccccbf;
 }
 
+.tablet-desktop a:active {
+	background-color: #ccccbf;
+}
+
 .tablet-desktop, #menu-links {
     display: none;
 }
@@ -152,5 +156,16 @@ footer {
 	
 	.home-images {
 		flex-direction: row;
+	}
+	
+	footer {
+		display: flex;
+		justify-content: center;
+	}
+	
+	footer * {
+		margin-top: auto;
+		margin-bottom: auto;
+		padding: 20px;
 	}
 }
