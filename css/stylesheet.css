@@ -169,3 +169,14 @@ footer {
 		padding: 20px;
 	}
 }
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1024px), print {
+	#container {
+		font-size: 1.15em;
+	}
+	
+	footer {
+		justify-content: left;
+	}
+}
