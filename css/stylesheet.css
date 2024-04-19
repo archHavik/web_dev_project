@@ -58,6 +58,7 @@ header {
 	background-color: #b4b4a6;
 	padding: 20px;
 	position: sticky;
+	left: 10px
 }
 
   /* Styles for the main section */
@@ -80,12 +81,10 @@ main p {
 /* Styles for the nav */
 #nav {
 	display: flex;
-	justify-content: space-between;
 	background-color: #b4b4a6;
 }
 
 nav .tablet-desktop {
-    justify-content: flex-end;
     margin-bottom: 100px;
     margin-top: -30px;
 }
@@ -161,6 +160,10 @@ footer {
 @media screen and (min-width: 630px), print {
 	
 	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+	#nav {
+		justify-content: space-between;;
+	}
+	
 	.tablet-desktop {
 		display: flex;
 	}
