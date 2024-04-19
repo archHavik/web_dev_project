@@ -15,6 +15,9 @@ body, header, nav, footer, h3, div, img, ul, section, video {
 
 #container {
 	font-family: 'Francois One', sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 /* Style for rules for hamburger menu */
@@ -53,8 +56,8 @@ body, header, nav, footer, h3, div, img, ul, section, video {
 /* Style rules for header */
 header {
 	background-color: #b4b4a6;
-	text-align: left 20px;
 	padding: 20px;
+	position: sticky;
 }
 
   /* Styles for the main section */
@@ -119,19 +122,26 @@ nav .tablet-desktop {
     list-style-type: none;
 }
 
-.tablet-desktop ul li {
+.tablet-desktop li {
     display: inline-block;
     margin-right: 30px;
 }
 
-.tablet-desktop ul li:last-child {
+.tablet-desktop li:last-child {
     margin-right: 20;
 }
 
-nav li a:hover {
+.tablet-desktop a {
+	padding: 10px;
+}
+
+.tablet-desktop a:hover {
     color: #000;
     background-color: #ccccbf;
-    transform: scale(1.3);
+}
+
+.tablet-desktop a:active {
+	background-color: #ccccbf;
 }
 
 .tablet-desktop, #menu-links {
@@ -143,8 +153,19 @@ a{
     color: #375c83;
 }
 
+.home-images {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.home-images img {
+	height: 300px;
+}
+
 footer {
     text-align: center;
+	margin-top: auto;
 }
 
 /* Media Query for Tablet Viewport */
@@ -157,5 +178,31 @@ footer {
 
 	.mobile, .mobile-nav {
 		display: none;
+	}
+	
+	.home-images {
+		flex-direction: row;
+	}
+	
+	footer {
+		display: flex;
+		justify-content: center;
+	}
+	
+	footer * {
+		margin-top: auto;
+		margin-bottom: auto;
+		padding: 20px;
+	}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1024px), print {
+	#container {
+		font-size: 1.15em;
+	}
+	
+	footer {
+		justify-content: left;
 	}
 }
