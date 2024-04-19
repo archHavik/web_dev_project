@@ -74,6 +74,32 @@ main p {
     line-height: 5;
 }
 
+/* Dropdown nav */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #b4b4a6;
+    border: 1px solid #b4b4a6;
+}
+
+.tablet-desktop ul li:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 30px;
+}
+
+.dropdown-menu li a {
+    color: #375c83;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #abab7c;
+}
+
 /* Styles for the nav */
 #nav {
 	display: flex;
