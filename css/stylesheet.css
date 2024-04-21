@@ -18,29 +18,35 @@ body, header, nav, footer, h3, div, img, ul, section, video {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-}
+}	
 
 /* Style for rules for hamburger menu */
+.mobile-nav {
+	display: flex;
+	flex-direction: column;
+}
+
 .mobile-nav a {
 	color: #375c83;
 	text-align: center;
 	font-size: 2em;
 	text-decoration: none;
-	padding: 3%;
-	display: block;
     background-color: #b4b4a6;
+	margin: 10px;
 }
 
-
-.mobile-nav a.menu-icon {
+.menu-icon {
 	text-align: center;
-	display: block;
-	position: absolute;
-	right: 0;
-	top: 0;
     color: #375c83;
 	padding: 0;
-	margin: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+#menu-links {
+	flex-direction: column;
 }
 
 /* Styles for the video section */
@@ -108,6 +114,8 @@ main p {
 #nav {
 	display: flex;
 	background-color: #b4b4a6;
+	justify-content: space-evenly;
+	gap: 50%;
 }
 
 nav .tablet-desktop {
@@ -202,7 +210,8 @@ footer {
 	
 	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
 	#nav {
-		justify-content: space-between;;
+		justify-content: space-between;
+		gap: 0;
 	}
 	
 	.tablet-desktop {

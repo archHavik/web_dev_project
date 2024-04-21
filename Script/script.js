@@ -2,12 +2,12 @@
 function hamburger() {
 	var menu = document.getElementById("menu-links");
 	var logo = document.getElementById("ffc-logo");
-	if (menu.style.display === "block" && logo.style.display === "none") {
+	if (menu.style.display === "flex" && logo.style.display === "none") {
 		menu.style.display = "none";
-		logo.style.display = "block";
+		logo.style.display = "flex";
 	}
 	else {
-		menu.style.display = "block";
+		menu.style.display = "flex";
 		logo.style.display = "none";
 	}
 }
