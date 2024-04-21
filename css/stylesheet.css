@@ -33,6 +33,7 @@ body, header, nav, footer, h3, div, img, ul, section, video {
 
 
 .mobile-nav a.menu-icon {
+	text-align: center;
 	display: block;
 	position: absolute;
 	right: 0;
@@ -51,11 +52,6 @@ body, header, nav, footer, h3, div, img, ul, section, video {
 	display: block;
 	margin: 0 auto;
 	border-radius: 20px;
-}
-
-/*style rule for slide show*/
-.slideshow-container .mySlide {
-	display: none;
 }
 
 /* Style rules for header */
@@ -159,6 +155,8 @@ a{
     color: #375c83;
 }
 
+/* Style rule home images */
+
 .home-images {
 	display: flex;
 	flex-direction: column;
@@ -169,6 +167,7 @@ a{
 	height: 300px;
 }
 
+/* Grid Styles */
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -182,6 +181,7 @@ a{
     border-bottom: 1px solid black;
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
 	margin-top: auto;

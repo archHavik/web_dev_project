@@ -39,6 +39,6 @@ function showSlides(n) {
 function startSlideshow() {
     setInterval(() => {
         plusSlides(1);
-    }, 6000);
+    }, 5000);
 }
 startSlideshow();
