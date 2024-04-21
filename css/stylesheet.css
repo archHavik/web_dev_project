@@ -39,6 +39,8 @@ body, header, nav, footer, h3, div, img, ul, section, video {
 	right: 0;
 	top: 0;
     color: #375c83;
+	padding: 0;
+	margin: auto;
 }
 
 /* Styles for the video section */
@@ -84,15 +86,11 @@ main p {
     display: none;
     position: absolute;
     background-color: #b4b4a6;
-    border: 1px solid #b4b4a6;
 }
 
 .tablet-desktop ul li:hover .dropdown-menu {
-    display: block;
-}
-
-.dropdown-menu li {
-    padding: 30px;
+    display: flex;
+	flex-direction: column;
 }
 
 .dropdown-menu li a {
@@ -103,6 +101,7 @@ main p {
 
 .dropdown-menu li a:hover {
     background-color: #abab7c;
+	transform: none;
 }
 
 /* Styles for the nav */
@@ -124,7 +123,7 @@ nav .tablet-desktop {
 
 .tablet-desktop li {
     display: inline-block;
-    margin-right: 80px;
+    margin-right: 30px;
 }
 
 .tablet-desktop li:last-child {
@@ -156,7 +155,6 @@ a{
 }
 
 /* Style rule home images */
-
 .home-images {
 	display: flex;
 	flex-direction: column;
@@ -170,7 +168,7 @@ a{
 /* Grid Styles */
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     border-top: 1px solid black;
     border-right: 1px solid black;
 }
@@ -187,8 +185,20 @@ footer {
 	margin-top: auto;
 }
 
+#computer-cards {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	max-width: 100%;
+    margin: 0;
+}
+
+#computer-cards img {
+	height: 300px;
+}
+
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 630px), print {
+@media screen and (min-width: 820px), print {
 	
 	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
 	#nav {
@@ -201,10 +211,6 @@ footer {
 
 	.mobile, .mobile-nav {
 		display: none;
-	}
-	
-	.home-images {
-		flex-direction: row;
 	}
 	
 	footer {
@@ -227,6 +233,14 @@ footer {
 	
 	footer {
 		justify-content: left;
+	}
+	
+	.home-images {
+		flex-direction: row;
+	}
+	
+	#computer-cards {
+		flex-direction: row;
 	}
 }
 
