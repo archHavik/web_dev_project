@@ -18,7 +18,7 @@ body, header, nav, footer, h3, div, img, ul, section, video {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-}	
+}
 
 /* Style for rules for hamburger menu */
 .mobile-nav {
@@ -110,6 +110,29 @@ main p {
 	transform: none;
 }
 
+/* Dropdown nav */
+.dropd {
+    display: none;
+    position: absolute;
+    background-color: #b4b4a6;
+}
+
+.tablet-desktop ul li:hover .dropd {
+    display: flex;
+	flex-direction: column;
+}
+
+.dropd li a {
+    color: #375c83;
+    text-decoration: none;
+    display: block;
+}
+
+.dropd li a:hover {
+    background-color: #abab7c;
+	transform: none;
+}
+
 /* Styles for the nav */
 #nav {
 	display: flex;
@@ -147,6 +170,7 @@ nav .tablet-desktop {
     color: #000;
     background-color: #ccccbf;
 	transform: scale(1.3);
+	text-decoration: none;
 }
 
 .tablet-desktop a:active {
